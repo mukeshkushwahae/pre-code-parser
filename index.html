@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!-- ===== Charset and Viewport ===== -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- ===== SEO Meta Tags ===== -->
+   <title>Pre Code Parser</title>
+   <meta name="description" content="Easily convert and format your code into clean, pre-formatted HTML using our Pre Code Parser tool. Perfect for blogs, websites and documentation.">
+   <meta name="keywords" content="pre code parser, html code formatter, code to pre tag, format code html, code highlighter tool, pre tag generator, display code on website, convert code to html, code block formatter, programming code parser">
+   <meta name="author" content="Mukesh Kushwaha">
+   <link rel="canonical" href="https://mukeshkushwahae.github.io/pre-code-parser/">
+   <!-- ===== Favicon & Icons ===== -->
+   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+   <link rel="shortcut icon" href="./favicon.ico">
+   <!-- ===== Robots and Crawlers ===== -->
+   <meta name="robots" content="index, follow">
+   <meta name="googlebot" content="index, follow">
+   <meta name="bingbot" content="index, follow">
+   <!-- ===== CSS File ===== -->
+   <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+<body>
+   <!-- ===== Pre Code Parser Form ===== -->
+   <div class="form-wrapper">
+      <form>
+         <div>
+            <label for="rawCode" class="form-label">Enter or Paste Your Code:</label>
+            <textarea type="text" id="rawCode" class="form-control" rows="4" autocomplete="off"></textarea>
+         </div>
+         <div>
+            <label for="codeType" class="form-label">Choose Your Code Type:</label>
+            <select id="codeType" class="form-control">
+               <option value="xml">Xml</option>
+               <option value="html">Html</option>
+               <option value="css">CSS</option>
+               <option value="javascript">JavaScript</option>
+               <option value="bash">Bash</option>
+               <option value="cpp">C++</option>
+               <option value="c">C</option>
+               <option value="coffeescript">CoffeeScript</option>
+               <option value="diff">Diff</option>
+               <option value="go">Go</option>
+               <option value="ini">INI</option>
+               <option value="java">Java</option>
+               <option value="json">JSON</option>
+               <option value="markdown">Markdown</option>
+               <option value="objectivec">Objective C</option>
+               <option value="python">Python</option>
+               <option value="php">PHP</option>
+               <option value="ruby">Ruby</option>
+               <option value="sql">SQL</option>
+               <option value="swift">Swift</option>
+               <option value="typescript">TypeScript</option>
+            </select>
+         </div>
+         <div class="button-group">
+            <button type="button" id="parseBtn" class="button">Parse</button>
+            <button type="button" id="copyBtn" class="button">Copy</button>
+            <button type="button" id="clearBtn" class="button">Clear</button>
+         </div>
+         <div id="parsedCodeHidden" class="hidden">
+            <label for="parsedCode" class="form-label">Parsed Code:</label>
+            <textarea type="text" id="parsedCode" class="form-control" rows="4" readonly=""></textarea>
+         </div>
+      </form>
+   </div>
+   <!-- ===== JavaScript File ===== -->
+   <script src="./assets/js/main.min.js"></script>
+</body>
+</html>
